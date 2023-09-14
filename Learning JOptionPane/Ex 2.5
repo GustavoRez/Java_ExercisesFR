@@ -1,0 +1,18 @@
+import javax.swing.JOptionPane;
+
+public class ex 5{
+    public static void main (String[] args){
+    
+    //Checking if it's a negative number
+        
+        int x;
+
+        x = Integer.parseInt(JOptionPane.showInputDialog(null, "Enter a number: "));
+        JOptionPane.showMessageDialog(null, "Input:\n" + x);
+       
+        if(x < 0){
+            JOptionPane.showMessageDialog(null, "Output:\nNegative");
+        } else if(x >= 0){            
+            JOptionPane.showMessageDialog(null, "Output:\nPositive");
+        }
+    }

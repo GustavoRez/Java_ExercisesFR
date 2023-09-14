@@ -1,0 +1,42 @@
+import javax.swing.JOptionPane;
+
+public class ex 2{
+    public static void main(String[] args) {
+    
+    //Calculator with subroutines
+    
+        int y = Integer.parseInt(JOptionPane.showInputDialog(null,"Which operation do you want to do?\n1-Sum\n2-Subtraction\n3-Multiplication\n4-Division\n0-Exit"));
+        
+        if(y <= 0 || y >=  5){System.exit(0);}
+
+        int x1 = Integer.parseInt(JOptionPane.showInputDialog(null, "Insert number 1: "));
+        int x2 = Integer.parseInt(JOptionPane.showInputDialog(null, "Insert number 2: "));
+        
+        switch (y) {
+            case 1:
+                JOptionPane.showMessageDialog(null, "Sum result: " + Sum(x1, x2));
+                break;
+            case 2:
+                JOptionPane.showMessageDialog(null, "Subtraction result: " + Subtraction(x1, x2));
+                break;
+            case 3:
+                JOptionPane.showMessageDialog(null, "Multiplication result: " + Multiplication(x1, x2));
+                break;
+            case 4:
+                JOptionPane.showMessageDialog(null, "Division result: " + Division(x1, x2));
+                break;
+        }
+    }
+    public static int Sum(int n1, int n2) {
+        return n1 + n2;
+    }
+    public static int Subtraction(int n1, int n2) {
+        return n1 - n2;
+    }
+    public static int Multiplication(int n1, int n2) {
+        return n1 * n2;
+    }
+    public static int Division(int n1, int n2) {
+        return n1 / n2;
+    }
+}

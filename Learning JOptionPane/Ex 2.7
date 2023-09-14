@@ -1,0 +1,31 @@
+import javax.swing.JOptionPane;
+
+public class ex 7{
+    public static void main (String[] args){
+    
+    //Making a restaurant menu        
+        int x, y;
+
+        x = Integer.parseInt(JOptionPane.showInputDialog(null, "What do you want to order?\n1- Hot-Dog\n2- X-Salad\n3- X-Bacon\n4- Simple Toast\n5- Soda"));
+        y = Integer.parseInt(JOptionPane.showInputDialog(null, "How many?"));
+        JOptionPane.showMessageDialog(null, "IN:\n" + x + "\n" + y);
+       
+        switch(x){
+            case 1:
+            JOptionPane.showMessageDialog(null, "OUT:\nTotal: R$" + y * 4);
+            break;
+            case 2:
+            JOptionPane.showMessageDialog(null, "OUT:\nTotal: R$" + y * 4.50);
+            break;
+            case 3:
+            JOptionPane.showMessageDialog(null, "OUT:\nTotal: R$" + y * 5);
+            break;
+            case 4:
+            JOptionPane.showMessageDialog(null, "OUT:\nTotal: R$" + y * 2);
+            break;
+            case 5:
+            JOptionPane.showMessageDialog(null, "OUT:\nTotal: R$" + y * 1.50);
+            break;
+        }
+    }
+}

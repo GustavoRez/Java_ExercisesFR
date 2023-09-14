@@ -1,0 +1,17 @@
+import javax.swing.JOptionPane;;
+
+public class Ex1 {
+    public static void main(String[] args){
+    
+    //Learning subroutines    
+    
+        int x1 = Integer.parseInt(JOptionPane.showInputDialog(null, "Number 1:"));
+        int x2 = Integer.parseInt(JOptionPane.showInputDialog(null, "Number 2:"));
+        JOptionPane.showMessageDialog(null, "Result: " + average(x1, x2));
+        
+    }
+    public static int average(int n1, int n2){
+        return (n1 + n2) / 2;
+    
+    }
+}

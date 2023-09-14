@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class ex 1 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        //trying try and catch
+
+        int v1 = 0, v2 = 0, error;
+
+        System.out.println("Enter with two numbers:\n");
+
+        do {
+            try {
+                error = 0;
+                System.out.println("Insert the first.");
+                v1 = Integer.parseInt(sc.next());
+                System.out.println("Insert the second.");
+                v2 = Integer.parseInt(sc.next());
+            } catch (Exception e) {
+                System.out.println("ERROR!" + e + "\n");
+                error = 1;
+            }
+        } while (error != 0);
+
+        System.out.println("Your som resulted in: " + (v1 + v2));
+
+        sc.close();
+    }
+}

@@ -1,0 +1,21 @@
+import javax.swing.JOptionPane;
+
+public class ex 9{
+    public static void main(String[] args) {
+    
+    //Checking how many numbers are between 10 and 20
+    
+        int in = 0, out = 0;
+        int y = Integer.parseInt(JOptionPane.showInputDialog(null, "Enter how many number you will write."));
+
+        for(int i = 1; i <= y; i++){
+            int x = Integer.parseInt(JOptionPane.showInputDialog(null, "Insert the" + i + "º number"));
+            if(x >= 10 && x <= 20){
+                in++;
+            } else {
+                out++;
+            }
+        }
+        JOptionPane.showMessageDialog(null, in + " IN\n" + out + " OUT");
+    }
+}

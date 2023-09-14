@@ -1,0 +1,21 @@
+import javax.swing.JOptionPane;
+
+public class ex 3{
+    public static void main (String[] args){
+    
+    //Calculating your salary
+        
+        int x, y;
+        double a;
+
+
+        x = Integer.parseInt (JOptionPane.showInputDialog(null, "Insert your number: "));
+        y = Integer.parseInt (JOptionPane.showInputDialog(null, "Insert the number of hours you worked: "));
+        a = Double.parseDouble (JOptionPane.showInputDialog(null, "Insert your hourly pay: "));
+        
+
+        JOptionPane.showMessageDialog (null, "Input:\n" + x + "\n" + y + "\n" + a);
+        JOptionPane.showMessageDialog (null, "Output:\nNumber = " + x + "\Salary = R$" + (y * a));
+
+    }
+}

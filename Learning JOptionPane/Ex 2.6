@@ -1,0 +1,20 @@
+import javax.swing.JOptionPane;
+
+public class ex 6{
+    public static void main (String[] args){
+    
+    //Checking if both numbers are multiples
+        
+        int x, y;
+
+        x = Integer.parseInt(JOptionPane.showInputDialog(null, "Enter one number: "));
+        y = Integer.parseInt(JOptionPane.showInputDialog(null, "Enter one more number: "));
+        JOptionPane.showMessageDialog(null, "In:\n" + x + "\n" + y);
+       
+        if(x % y == 0 || y % x == 0){
+            JOptionPane.showMessageDialog(null, "Out:\nThey're multiple");
+        } else{            
+            JOptionPane.showMessageDialog(null, "Out:\nThey're not multiple");
+        }
+    }
+}

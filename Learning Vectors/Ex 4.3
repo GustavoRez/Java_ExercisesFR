@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class ex 3 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int qtN, pair = 0;
+
+        System.out.println("Insert how many numbers will you enter: ");
+        qtN = sc.nextInt();
+
+        int totN[] = new int[qtN];
+
+        for (int i = 0; i < totN.length; i++) {
+            System.out.printf("Insira o %dº numero: ", (i + 1));
+            totN[i] = sc.nextInt();
+        }
+
+        System.out.println("\nPair numbers:");
+
+        for (int i = 0; i < totN.length; i++) {
+            if (totN[i] % 2 == 0) {
+                System.out.printf(totN[i] + " ");
+                pair++;
+            }
+        }
+        System.out.println("\nQuantity of pair numbers = " + pair);
+
+        sc.close();
+    }
+}

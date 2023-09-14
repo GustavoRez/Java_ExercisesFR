@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class ex 1{
+    public static void main (String[] args){
+        Scanner sc = new Scanner(System.in);
+        
+        //Learning vectors
+        
+        int qtN;
+        
+        System.out.println("Insert how many numbers will you enter (max 10): ");
+        qtN = sc.nextInt();        
+        if(qtN > 10 ){
+            System.out.println("Error: excess of numbers!");
+            System.exit(0);
+        }
+        int totN[] = new int[qtN];
+                  
+        for (int i = 0; i < totN.length; i++){
+            System.out.printf("Insert the %dº number: ", (i+1));
+            totN[i] = sc.nextInt();
+        }
+        
+        System.out.println("The negative numbers are: ");    
+        
+        for (int i = 0; i < totN.length; i++){ 
+            if(totN[i] < 0)
+            System.out.println(totN[i]);   
+
+        }
+       sc.close();
+    }
+}

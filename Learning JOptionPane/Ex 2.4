@@ -1,0 +1,26 @@
+import javax.swing.JOptionPane;
+
+public class ex 4{
+    public static void main (String[] args){
+    
+    //Creating a system for a store
+        
+        int x, y, a, b;
+        double z, c;
+
+
+        x = Integer.parseInt (JOptionPane.showInputDialog(null, "Insert the item 1 code: "));
+        y = Integer.parseInt (JOptionPane.showInputDialog(null, "Insert the quantity of item 1: "));
+        z = Double.parseDouble (JOptionPane.showInputDialog(null, ": "));
+        a = Integer.parseInt (JOptionPane.showInputDialog(null, "Insert the item 2 code: "));
+        b = Integer.parseInt (JOptionPane.showInputDialog(null, "Insert the quantity of item 2: "));    
+        c = Double.parseDouble(JOptionPane.showInputDialog(null, "Insert the item 2 unit price: "));
+        
+
+        JOptionPane.showMessageDialog (null, "Input:\n" + x + "  " + y + "  " + z + "\n" + a + "  " + b + "  " + c);
+        double t = (y * z) + (b * c);
+        String v = String.format("Total amount payable = R$%.2f", t);
+        JOptionPane.showMessageDialog (null, "Output:\n" + v);
+
+    }
+}

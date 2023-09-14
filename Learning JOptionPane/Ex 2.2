@@ -1,0 +1,20 @@
+import javax.swing.JOptionPane;
+
+public class ex 2{
+    public static void main (String[] args){
+    
+    //Calculating the circle area
+        
+        double x;
+
+        x = Double.parseDouble (JOptionPane.showInputDialog(null, "Insert the circle radius: "));
+        
+
+        JOptionPane.showMessageDialog (null, "Input:\n" + x);
+        double a = x * x * 3.14159;
+        String area = String.format("Area = %.4f", a);
+        JOptionPane.showMessageDialog (null, "Output:\n" + area);
+
+
+    }
+}

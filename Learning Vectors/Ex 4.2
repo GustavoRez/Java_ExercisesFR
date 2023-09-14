@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class ex 2 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        //Some vectors exercises
+
+        int qtN;
+        double som = 0;
+
+        System.out.println("Insert how many numbers will you enter: ");
+        qtN = sc.nextInt();
+
+        double totN[] = new double[qtN];
+
+        for (int i = 0; i < totN.length; i++) {
+            System.out.printf("Insert the %dº number: ", (i + 1));
+            totN[i] = sc.nextDouble();
+
+            som = totN[i] + som;
+        }
+        for (int i = 0; i < totN.length; i++) {
+            System.out.println(totN[i]);
+        }
+        System.out.println("Som = " + som);
+        System.out.printf("Average = %.2f", (som / qtdN));
+        
+        sc.close();
+    }
+}

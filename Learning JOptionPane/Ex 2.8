@@ -1,0 +1,17 @@
+Ex 1
+import javax.swing.JOptionPane;
+
+public class ex. 8{
+    public static void main(String[] args){
+    
+    //Creating a login
+
+        int x = Integer.parseInt(JOptionPane.showInputDialog(null, "Enter your passcode."));
+        
+        while (x != 2002){
+            JOptionPane.showMessageDialog(null, "Wrong passcode!");
+            x = Integer.parseInt(JOptionPane.showInputDialog(null, "Enter your passcode."));
+        }
+        JOptionPane.showMessageDialog(null, "Welcome!");    
+    }
+}

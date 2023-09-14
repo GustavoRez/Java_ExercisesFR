@@ -1,0 +1,18 @@
+import javax.swing.JOptionPane;
+
+public class ex 1{
+    public static void main (String[] args){
+    
+     //Learning JOptionPane
+        
+        int x, y;
+
+        x = Integer.parseInt (JOptionPane.showInputDialog(null, "Insert one number: "));
+        y = Integer.parseInt (JOptionPane.showInputDialog(null, "Insert one more: "));
+
+        JOptionPane.showMessageDialog (null, "Input:\n" + x + "\n" + y);
+        JOptionPane.showMessageDialog (null, "Output:\n Sum = " + (x + y));
+
+
+    }
+}

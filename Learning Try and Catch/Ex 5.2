@@ -1,0 +1,22 @@
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
+public class teste {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int v1 = 0, v2 = 0;
+
+        try {
+            System.out.println("Insert the first number of your division.");
+            v1 = sc.nextInt();
+            System.out.println("Insert the second number of your division.");
+            v2 = sc.nextInt();
+        } catch (ArithmeticException e) {
+            JOptionPane.showMessageDialog(null, "ERROR!" + e);
+        }
+
+        System.out.println("Result of your division: " + (v1 / v2));
+
+        sc.close();
+    }
